@@ -10,12 +10,14 @@ Library for making HTTP requests using fetch API.
 <h2>How to Use </h2>
 
 <p> Firstly, instantiate an object of the easyFetchJSON class as shown below -</p>
+
 ```javascript
-  const http = new easyFetchJSON();
+const http = new easyFetchJSON();
 ```
 <p> Then make either a GET, POST, PUT, or DELETE request as shown below - </p>
 
 <h2>Sample GET Request </h2>
+
 ```javascript
 http.get('https://jsonplaceholder.typicode.com/users')
 .then(data => console.log(data))
@@ -23,6 +25,8 @@ http.get('https://jsonplaceholder.typicode.com/users')
 ```
 
 <h2>Sample POST Request </h2>
+
+
 ```javascript
 const data = {
     name: "Salmon",
@@ -33,7 +37,10 @@ http.post('https://jsonplaceholder.typicode.com/users', data)
     .catch(error => console.log(error));
 ```
 
+
 <h2>Sample PUT Request </h2>
+
+
 ```javascript
 const data = {
     name: "Salmon",
@@ -44,6 +51,8 @@ http.put('https://jsonplaceholder.typicode.com/users/2', data)
         .catch(error => console.log(error));
 ```
 <h2>Sample DELETE Request </h2>
+
+
 ```javascript
 http.delete('https://jsonplaceholder.typicode.com/users/2')
     .then(data => console.log(data))
